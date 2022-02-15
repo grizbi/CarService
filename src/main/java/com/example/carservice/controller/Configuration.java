@@ -6,18 +6,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class Configuration {
-
-
+    
     @GetMapping("/cars")
     public String getCars(){
 
-
         return "Cars";
     }
-
-
-
-
-
 
 }
