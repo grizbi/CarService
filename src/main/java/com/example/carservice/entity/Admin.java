@@ -1,4 +1,4 @@
-package entity;
+package com.example.carservice.entity;
 
 
 import javax.persistence.*;
@@ -12,10 +12,8 @@ public class Admin {
     @GeneratedValue(strategy = GenerationType.AUTO)
     int adminID;
 
-    @Column(name = "Password")
     String password;
 
-    @Column(name = "Login")
     String login;
 
 

@@ -1,4 +1,4 @@
-package entity;
+package com.example.carservice.entity;
 
 import javax.persistence.*;
 
@@ -10,21 +10,16 @@ public class Car {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int userID;
+    int carID;
 
-    @Column(name="Name")
     String name;
 
-    @Column(name="Year of production")
     int yearOfProduction;
 
-    @Column(name="Price")
     int price;
 
-    @Column(name="Weight")
     int weight;
 
-    @Column(name="Country of production")
     String countryOfProduction;
 
     public Car(String name, int yearOfProduction, int price, int weight, String countryOfProduction) {
@@ -36,7 +31,7 @@ public class Car {
     }
 
     public void setUserID(int userID) {
-        this.userID = userID;
+        this.carID = userID;
     }
 
     public void setName(String name) {
@@ -60,7 +55,7 @@ public class Car {
     }
 
     public int getUserID() {
-        return userID;
+        return carID;
     }
 
     public String getName() {
